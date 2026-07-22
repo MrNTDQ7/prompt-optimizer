@@ -171,7 +171,8 @@ const messages = {
       "languages": {
         "zh-CN": "简体中文",
         "zh-TW": "繁體中文",
-        "en-US": "English"
+        "en-US": "English",
+        "vi-VN": "Tiếng Việt"
       }
     },
     "theme": "Theme Settings",
