@@ -14,7 +14,7 @@ const messages = {
   ...enUS,   // nền tiếng Anh — phần nào chưa dịch sẽ dùng cái này
   ...core,   // chồng bản tiếng Việt của core lên
   // ...favorites,
-  // ...prompt,
+   ...prompt,
   // ...models,
   // ...templates,
   // ...testing,
