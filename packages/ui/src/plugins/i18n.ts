@@ -4,7 +4,7 @@ import { createI18n } from "vue-i18n";
 import zhCN from "../i18n/locales/zh-CN";
 import zhTW from "../i18n/locales/zh-TW";
 import enUS from "../i18n/locales/en-US";
-import enUS from "../i18n/locales/vi-VN";
+import viVN from "../i18n/locales/vi-VN";
 import {
   getPreference,
   setPreference,
@@ -12,10 +12,10 @@ import {
 import { UI_SETTINGS_KEYS } from "@prompt-optimizer/core";
 import type { AppServices } from "../types/services";
 
-export type SupportedLocale = "zh-CN" | "zh-TW" | "en-US";
+export type SupportedLocale = "zh-CN" | "zh-TW" | "en-US" | "vi-VN";
 
 export const DEFAULT_LOCALE: SupportedLocale = "en-US";
-export const SUPPORTED_LOCALES: SupportedLocale[] = ["zh-CN", "zh-TW", "en-US"];
+export const SUPPORTED_LOCALES: SupportedLocale[] = ["zh-CN", "zh-TW", "en-US", "vi-VN"];
 
 function normalizeLocaleCandidate(
   locale: string | null | undefined,
@@ -33,6 +33,10 @@ function normalizeLocaleCandidate(
 
   if (lower === 'en' || lower.startsWith('en-')) {
     return 'en-US';
+  }
+
+  if (lower === 'vi' || lower.startsWith('vi-')) {
+    return 'vi-VN';
   }
 
   if (lower === 'zh' || lower.startsWith('zh-')) {
@@ -103,6 +107,7 @@ const i18n = createI18n({
   fallbackLocale: {
     "zh-TW": ["zh-CN", "en-US"],
     "zh-CN": ["en-US"],
+    "vi-VN": ["en-US"],
     default: ["en-US"],
   },
   messages: {
