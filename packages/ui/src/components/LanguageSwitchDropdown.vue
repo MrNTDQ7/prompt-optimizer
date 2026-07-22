@@ -90,6 +90,11 @@ const availableLanguages = computed<LanguageOption[]>(() => [
     key: 'en-US',
     label: t('settings.languageSwitcher.languages.en-US'),
     locale: 'en-US'
+  },
+  {
+    key: 'vi-VN',
+    label: t('settings.languageSwitcher.languages.vi-VN'),
+    locale: 'vi-VN'
   }
 ])
 
@@ -112,7 +117,7 @@ const dropdownOptions = computed<DropdownOption[]>(() => {
 })
 
 const isSupportedLocale = (value: unknown): value is SupportedLocale =>
-  value === 'zh-CN' || value === 'zh-TW' || value === 'en-US'
+  value === 'zh-CN' || value === 'zh-TW' || value === 'en-US' || value === 'vi-VN'
 
 // 处理语言选择
 const handleLanguageSelect = async (key: string) => {
