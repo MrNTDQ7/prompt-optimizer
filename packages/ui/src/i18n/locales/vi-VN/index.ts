@@ -2,7 +2,7 @@ import enUS from '../en-US'
 import core from './core'
 // Khi dịch thêm file nào thì bỏ comment dòng import + dòng spread tương ứng bên dưới
 // import favorites from './favorites'
-// import prompt from './prompt'
+import prompt from './prompt'
 // import models from './models'
 // import templates from './templates'
 // import testing from './testing'
