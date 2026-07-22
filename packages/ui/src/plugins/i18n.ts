@@ -4,6 +4,7 @@ import { createI18n } from "vue-i18n";
 import zhCN from "../i18n/locales/zh-CN";
 import zhTW from "../i18n/locales/zh-TW";
 import enUS from "../i18n/locales/en-US";
+import enUS from "../i18n/locales/vi-VN";
 import {
   getPreference,
   setPreference,
