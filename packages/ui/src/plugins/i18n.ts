@@ -109,6 +109,7 @@ const i18n = createI18n({
     "zh-CN": zhCN,
     "zh-TW": zhTW,
     "en-US": enUS,
+    "vi-VN": viVN,
   },
 });
 
