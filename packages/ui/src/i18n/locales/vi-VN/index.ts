@@ -8,7 +8,7 @@ import templates from './templates'
 import testing from './testing'
 import context from './context'
 // import image from './image'
-// import errors from './errors'
+import errors from './errors'
 
 const messages = {
   ...enUS,   // nền tiếng Anh — phần nào chưa dịch sẽ dùng cái này
@@ -20,7 +20,7 @@ const messages = {
   ...testing,
   ...context,
   // ...image,
-  // ...errors,
+  ...errors,
 } as const;
 
 export default messages;
