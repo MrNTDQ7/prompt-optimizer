@@ -3,7 +3,7 @@ import core from './core'
 // Khi dịch thêm file nào thì bỏ comment dòng import + dòng spread tương ứng bên dưới
 // import favorites from './favorites'
 import prompt from './prompt'
-// import models from './models'
+import models from './models'
 import templates from './templates'
 import testing from './testing'
 import context from './context'
@@ -15,7 +15,7 @@ const messages = {
   ...core,   // chồng bản tiếng Việt của core lên
   // ...favorites,
   ...prompt,
-  // ...models,
+  ...models,
   ...templates,
   ...testing,
   ...context,
