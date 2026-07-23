@@ -5,7 +5,7 @@ import core from './core'
 import prompt from './prompt'
 // import models from './models'
 // import templates from './templates'
-// import testing from './testing'
+import testing from './testing'
 // import context from './context'
 // import image from './image'
 // import errors from './errors'
@@ -17,7 +17,7 @@ const messages = {
   ...prompt,
   // ...models,
   // ...templates,
-  // ...testing,
+  ...testing,
   // ...context,
   // ...image,
   // ...errors,
